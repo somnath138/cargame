@@ -1,0 +1,73 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background: url("Hv1j8V.jpg");
+	background-repeat: no-repeat;
+	background-size: 103%;
+	display: flex;
+	justify-content: center ;
+	align-items: center;
+	height: 100vh;
+}
+#road{
+	background: url('road.jpg');
+	width: 20rem;
+	height: 770px;
+	animation: movedon 2s linear infinite;
+	background-repeat: repeat-y;
+	background-position: 0%;
+}
+
+@keyframes movedon{
+	0%{
+		background-position-y: 0px;
+	}
+	100%{
+		background-position-y: 500px;
+	}
+}
+#car1{
+	width: 100px;
+    height: 120px;
+    position: relative;
+    background: url("top-car-view-png-34877.png");
+    margin-left: 20px;
+    top: 650px;
+    left: 100px;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+#car2{
+	width: 120px;
+    height: 150px;
+    background: url("police_car_PNG31%20%282%29.png");
+    position: relative;
+   
+    background-size: 75%;
+    background-repeat: no-repeat;
+    top: 0px;
+    animation: attackCar 1s linear infinite;
+}
+@keyframes attackCar{
+	0%{
+		top: -130px;
+		
+	}
+	100%{
+		top: 80%;
+	}
+}
+#score{
+	width: 100px;
+    height: 100px;
+    color: white;
+    position: fixed;
+    /* display: flex; */
+    /* float: right; */
+    top: 15px;
+    left: 80%;
+    font-size: 40px;
+    /* white-space: nowrap;
+}
